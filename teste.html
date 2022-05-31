@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Primeiro Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style type="text/css">
+        .rodape {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">BemEstarFisio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.php">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Meus dados</a></li>
+                            <li><a class="dropdown-item" href="#">Meus pedidos</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Digite aqui" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cdn.pixabay.com/photo/2020/09/17/09/52/massage-5578598__340.jpg" class="d-block w-100"
+                    alt="imagem sobre fisioterapia" height="500"px>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2015/01/05/22/29/wellness-589776__340.jpg" class="d-block w-100" alt="arranjo de velas"height="500"px>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2022/02/14/12/03/craniosacral-7012994__340.jpg" class="d-block w-100"
+                    alt="massagem no rosto da paciente" height="500px>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container-fluid">
+        <div class="row mt-3">
+            <div class="col-12 col-lg-6">
+                <img src="https://cdn.pixabay.com/photo/2016/08/01/12/28/rehab-center-1560942__340.jpg"
+                    alt="Fachada clinica fisioterapia" class="img-fluid">
+            </div>
+            <div class="col-12 col-lg-6">
+                <h1 class="text-center">BemEstarFisio</h1>
+                <p class="text-center">A BemEstarFisio foi criada em 2021 para atender melhor o nosso cliente.</p>
+            </div>
+        </div>
+        <!--aqui começa as fotos-->
+
+        <div class="row mt-3">
+            <div class="col-12 col-lg-4">
+                <p class="text-center"><img src="https://cdn.pixabay.com/photo/2018/10/24/00/32/back-pain-3769360__340.png"
+                        alt="vestido em destaque" class="img-fluid rounded-circle" width="30%"></p>
+                <h1 class="text-center">BemEstarFisio</h1>
+                <p class="text-center">Os melhores profisionais da fisioterapia estão aqui!</p>
+            </div>
+            <div class="col-12 col-lg-4">
+                <p class="text-center"><img src="https://cdn.pixabay.com/photo/2017/03/10/16/55/foot-massage-2133279__340.jpg"
+                        alt="fisioterapia" class="img-fluid rounded-circle" width="30%"></p>
+                <h1 class="text-center">BemEstarFisio</h1>
+                <p class="text-center">Os melhores profisionais da fisioterapia estão aqui!</p>
+            </div>
+            <div class="col-12 col-lg-4">
+                <p class="text-center"><img src="https://cdn.pixabay.com/photo/2016/09/27/16/54/physical-therapy-1698817__340.jpg"
+                        alt="fisioterapia" class="img-fluid rounded-circle" width="30%"></p>
+                <h1 class="text-center">BemEstarFisio</h1>
+                <p class="text-center">Os melhores proficionais fisioterapia estão aqui!</p>
+            </div>
+        </div>
+        <!--teste de mapa-->
+        <base target="_blank" />
+<iframe width="400" height="215" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+   src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=es-419&amp;geocode=&amp;q=buenos+aires&amp;sll=37.0625,-95.677068&amp;sspn=38.638819,80.859375&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=Buenos+Aires,+Argentina&amp;z=11&amp;ll=-34.603723,-58.381593&amp;output=embed">
+</iframe><br />
+<small>
+    <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=es-419&amp;geocode=&amp;q=buenos+aires&amp;sll=37.0625,-95.677068&amp;sspn=38.638819,80.859375&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=Buenos+Aires,+Argentina&amp;z=11&amp;ll=-34.603723,-58.381593"
+       style="color:#0000FF;text-align:left">
+        See bigger map
+    </a>
+</small>
+
+
+
+
+
+
+        <!--aqui comeca o rodape-->
+        <div class="row rodape">
+            <div class="col-12">
+                <p class="text-center"> Todos os direitos reservados </p>
+                <p class="text-center"> Av. Moizaniel de Cavalho, 555 - São José de Mipibu/RN</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
